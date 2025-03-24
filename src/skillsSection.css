@@ -1,0 +1,94 @@
+:root {
+  /* VS Code Syntax Colors */
+  --vscode-keyword: #569cd6; /* Blue */
+  --vscode-function: #dcdcaa; /* Light yellow */
+  --vscode-string: #ce9178; /* Orange */
+  --vscode-number: #b5cea8; /* Green */
+}
+
+.skills-section {
+  padding: 4rem 2rem;
+  background: #252526;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+
+  margin: 0 auto;
+}
+
+.skill-category {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--category-color);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.category-header h3 {
+  font-size: 1.2rem;
+  color: #d4d4d4;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  color: var(--category-color);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: rgba(86, 156, 214, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  background: rgba(86, 156, 214, 0.2);
+  transform: scale(1.05);
+}
+
+.skill-icon {
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

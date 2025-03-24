@@ -1,0 +1,132 @@
+/* Projects.css - Scoped specifically to Projects page */
+.projects-page {
+  padding: 2rem;
+  height: 1000px;
+  font-family: "Consolas", "Monaco", monospace;
+  background-color: #252526;
+}
+
+.projects-page .projects-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects-page .projects-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #d4d4d4;
+}
+
+.projects-page .projects-subtitle {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.projects-page .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 20px;
+}
+
+.projects-page .project-card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #252526;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-page .project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px #569cd6;
+}
+
+.projects-page .project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.projects-page .project-header h2 {
+  color: #d4d4d4;
+  font-size: 1.5rem;
+}
+
+.projects-page .project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.projects-page .project-icon {
+  color: #569cd6;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.projects-page .project-icon:hover {
+  color: #4ec9b0;
+}
+
+.projects-page .project-description {
+  color: #a3a3a3;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.projects-page .project-features h3,
+.projects-page .project-technologies h3 {
+  color: #d4d4d4;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.projects-page .project-features ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.projects-page .project-features li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #a3a3a3;
+  line-height: 1.5;
+}
+
+.projects-page .project-features li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #569cd6;
+}
+
+.projects-page .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.projects-page .tech-tag {
+  background: rgba(86, 156, 214, 0.1);
+  color: #569cd6;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(86, 156, 214, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-page .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-page .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
