@@ -11,13 +11,28 @@ function Header() {
     { name: "Projects", path: "/projects" },
   ];
 
-  // Set active tab based on current route
-  const getActiveTab = () => {
-    const currentItem = navItems.find(
-      (item) => location.pathname === item.path
-    );
-    return currentItem ? currentItem.name : "";
-  };
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        isMenuOpen &&
+        !event.target.closest(".terminal-menu") &&
+        !event.target.closest(".mobile-code-nav")
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
+  // Close menu when route changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
 
   return (
     <header className="code-header">
@@ -53,6 +68,7 @@ function Header() {
           className={`terminal-menu ${isMenuOpen ? "open" : ""}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Menu"
+          aria-expanded={isMenuOpen}
         >
           <span>&gt;_{isMenuOpen ? " close" : " menu"}</span>
         </button>

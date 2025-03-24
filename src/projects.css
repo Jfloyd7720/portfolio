@@ -1,7 +1,7 @@
 /* Projects.css - Scoped specifically to Projects page */
 .projects-page {
   padding: 2rem;
-  height: 1000px;
+  height: max-content;
   font-family: "Consolas", "Monaco", monospace;
   background-color: #252526;
 }
