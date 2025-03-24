@@ -10,6 +10,7 @@ import "./home.css";
 import Timeline from "./Timeline";
 import SkillsSection from "./SkillsSection";
 import Hero from "./Hero";
+import { Link } from "react-router-dom";
 
 function Home() {
   const projects = [
@@ -91,9 +92,9 @@ function Home() {
                   </span>
                 ))}
               </div>
-              <a href={project.link} className="project-link">
+              <Link to={project.link} className="project-link">
                 View Project <FaArrowRight className="arrow-icon" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
