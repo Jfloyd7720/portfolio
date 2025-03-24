@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import "./Header.css";
+import "./header.css";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

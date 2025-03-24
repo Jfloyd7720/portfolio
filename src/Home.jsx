@@ -6,7 +6,7 @@ import {
   FaEnvelope,
   FaArrowRight,
 } from "react-icons/fa";
-import "./Home.css";
+import "./home.css";
 import Timeline from "./Timeline";
 import SkillsSection from "./SkillsSection";
 import Hero from "./Hero";
