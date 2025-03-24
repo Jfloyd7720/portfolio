@@ -66,7 +66,9 @@ function SkillsSection() {
   return (
     <section className="skills-section">
       <h2 className="section-title">
-        <span className="title-gradient">TECHNICAL SKILLS</span>
+        <span id="white" className="title-gradient">
+          TECHNICAL SKILLS
+        </span>
       </h2>
 
       <div className="skills-grid">

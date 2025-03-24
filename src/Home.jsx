@@ -77,7 +77,9 @@ function Home() {
       {/* Projects Section */}
       <section className="projects-section">
         <h2 className="section-title">
-          <span className="title-gradient">FEATURED PROJECTS</span>
+          <span id="white" className="title-gradient">
+            FEATURED PROJECTS
+          </span>
         </h2>
         <div className="projects-grid">
           {projects.map((project) => (

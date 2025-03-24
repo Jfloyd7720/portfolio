@@ -9,6 +9,7 @@ function Header() {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Projects", path: "/projects" },
+    { name: "Contact", path: "/contact" },
   ];
 
   // Close menu when clicking outside
