@@ -1,115 +1,117 @@
-/* Projects.css - Scoped specifically to Projects page */
-.projects-page {
-  padding: 2rem;
-  height: max-content;
-  font-family: "Consolas", "Monaco", monospace;
+/* projects.css */
+
+.projects-section {
+  padding: 4rem 2rem;
   background-color: #252526;
+  color: #e1e1e1;
+  font-family: "Consolas", "Monaco", monospace;
 }
 
-.projects-page .projects-header {
+.section-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.projects-page .projects-title {
+.section-title {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #d4d4d4;
 }
 
-.projects-page .projects-subtitle {
+.title-gradient {
+  background: linear-gradient(90deg, #bb86fc, #03dac6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-subtitle {
   color: #6b7280;
   font-size: 1.1rem;
 }
 
-.projects-page .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  padding: 20px;
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.projects-page .project-card {
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
   background: #1e1e1e;
-  border-radius: 8px;
-  padding: 1.5rem;
-  border: 1px solid #252526;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  will-change: transform;
 }
 
-.projects-page .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px #569cd6;
-}
-
-.projects-page .project-header {
+.card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.projects-page .project-header h2 {
-  color: #d4d4d4;
+.card-header h2 {
   font-size: 1.5rem;
+  color: #d4d4d4;
 }
 
-.projects-page .project-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.projects-page .project-icon {
+.github-icon {
   color: #569cd6;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   transition: color 0.2s ease;
 }
 
-.projects-page .project-icon:hover {
+.github-icon:hover {
   color: #4ec9b0;
 }
 
-.projects-page .project-description {
+.card-description {
   color: #a3a3a3;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
-.projects-page .project-features h3,
-.projects-page .project-technologies h3 {
+.card-features h3,
+.card-technologies h3 {
   color: #d4d4d4;
   font-size: 1.1rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
-.projects-page .project-features ul {
+.card-features ul {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 1.2rem;
 }
 
-.projects-page .project-features li {
+.card-features li {
   position: relative;
-  padding-left: 1.5rem;
   margin-bottom: 0.5rem;
   color: #a3a3a3;
   line-height: 1.5;
 }
 
-.projects-page .project-features li::before {
+.card-features li::before {
   content: "▹";
   position: absolute;
-  left: 0;
+  left: -1.2rem;
   color: #569cd6;
 }
 
-.projects-page .tech-tags {
+.tech-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 0.5rem;
 }
 
-.projects-page .tech-tag {
+.tech-tag {
   background: rgba(86, 156, 214, 0.1);
   color: #569cd6;
   padding: 0.3rem 0.8rem;
@@ -118,15 +120,49 @@
   border: 1px solid rgba(86, 156, 214, 0.3);
 }
 
-/* Responsive */
+.project-screenshots {
+  width: 100%;
+  overflow: hidden;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.screenshot-item {
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  will-change: transform;
+}
+
+.screenshot-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #333;
+}
+
+.screenshot-caption {
+  padding: 0.8rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
-  .projects-page .projects-grid {
-    grid-template-columns: 1fr;
+  .projects-section {
+    padding: 2rem 1rem;
   }
 
-  .projects-page .project-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .screenshot-grid {
+    grid-template-columns: 1fr;
   }
 }
