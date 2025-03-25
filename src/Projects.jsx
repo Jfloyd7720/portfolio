@@ -16,7 +16,6 @@ const Projects = () => {
       ],
       technologies: ["React", "JavaScript", "Chart.js", "Financial APIs"],
       github: "https://github.com/Jfloyd7720/Stock-Portfolio-Manager",
-      demo: "#",
     },
     {
       id: 2,
@@ -32,7 +31,6 @@ const Projects = () => {
       ],
       technologies: ["React", "JavaScript", "CSS", "Axios"],
       github: "https://github.com/Jfloyd7720/FE-Project-NC-News",
-      demo: "#",
     },
     {
       id: 3,
@@ -48,7 +46,6 @@ const Projects = () => {
       ],
       technologies: ["Node.js", "Express", "PostgreSQL", "Jest"],
       github: "https://github.com/Jfloyd7720/Northcoders-News-API",
-      demo: "#",
     },
   ];
 
@@ -77,16 +74,6 @@ const Projects = () => {
                 >
                   <FaGithub className="project-icon" />
                 </a>
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Live demo"
-                  >
-                    <FaExternalLinkAlt className="project-icon" />
-                  </a>
-                )}
               </div>
             </div>
 
