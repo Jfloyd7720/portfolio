@@ -28,7 +28,8 @@ function SkillsSection() {
         { name: "HTML5", icon: <SiHtml5 /> },
         { name: "CSS3", icon: <SiCss3 /> },
       ],
-      color: "var(--vscode-keyword)" /* Blue */,
+      color: "#569cd6", // Blue
+      hoverColor: "rgba(86, 156, 214, 0.1)", // Blue with 10% opacity
     },
     {
       title: "Frontend",
@@ -38,7 +39,8 @@ function SkillsSection() {
         { name: "UX/UI Design", icon: <SiFigma /> },
         { name: "Accessibility", icon: <SiFigma /> },
       ],
-      color: "var(--vscode-function)" /* Light yellow */,
+      color: "#dcdcaa", // Light yellow
+      hoverColor: "rgba(220, 220, 170, 0.1)",
     },
     {
       title: "Backend",
@@ -48,7 +50,8 @@ function SkillsSection() {
         { name: "Express", icon: <FaServer /> },
         { name: "REST APIs", icon: <FaServer /> },
       ],
-      color: "var(--vscode-string)" /* Orange */,
+      color: "#ce9178", // Orange
+      hoverColor: "rgba(206, 145, 120, 0.1)",
     },
     {
       title: "Data & Testing",
@@ -59,7 +62,8 @@ function SkillsSection() {
         { name: "TDD", icon: <SiJest /> },
         { name: "Data Analysis", icon: <FaChartBar /> },
       ],
-      color: "var(--vscode-number)" /* Green */,
+      color: "#b5cea8", // Green
+      hoverColor: "rgba(181, 206, 168, 0.1)",
     },
   ];
 
