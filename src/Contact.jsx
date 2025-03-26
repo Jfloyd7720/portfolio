@@ -31,7 +31,7 @@ function Contact() {
               className="contact-item"
             >
               <FaLinkedin className="contact-icon" />
-              <span>LinkedIn Profile</span>
+              <span>LinkedIn</span>
             </a>
 
             <a
@@ -41,7 +41,7 @@ function Contact() {
               className="contact-item"
             >
               <FaGithub className="contact-icon" />
-              <span>GitHub Profile</span>
+              <span>GitHub</span>
             </a>
           </div>
         </div>

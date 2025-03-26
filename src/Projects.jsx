@@ -2,9 +2,39 @@ import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "./projects.css";
 import image from "./assets/stock.png";
+import habitImage from "./assets/habit_01.png";
+import habitImage2 from "./assets/habit_02.png";
+import home from "./assets/home.png";
 
 const Projects = () => {
   const projects = [
+    {
+      id: 4,
+      title: "Habit Tracker with Virtual Pet",
+      description:
+        "A mobile app that combines habit tracking with a virtual pet companion, using AI to generate responses and motivate users.",
+      features: [
+        "Virtual pet that reacts to your habit completion",
+        "AI-generated responses and encouragement",
+        "Habit creation, tracking, and editing",
+        "Coin reward system for completing habits",
+        "In-app store to buy items for your pet",
+        "Social features to add friends and compare progress",
+      ],
+      technologies: [
+        "React Native",
+        "TypeScript",
+        "PostgreSQL",
+        "Node.js",
+        "OpenAI API",
+        "Firebase Authentication",
+      ],
+      github: "#", // Add your GitHub link here
+      screenshots: [
+        { url: habitImage, caption: "Virtual pet interaction screen" },
+        { url: habitImage2, caption: "Stats page" },
+      ],
+    },
     {
       id: 1,
       title: "Stock Portfolio Manager",
@@ -19,7 +49,7 @@ const Projects = () => {
       technologies: ["React", "JavaScript", "Chart.js", "Financial APIs"],
       github: "https://github.com/Jfloyd7720/Stock-Portfolio-Manager",
       screenshots: [
-        { url: image, caption: "Interactive stock chart view" },
+        { url: home, caption: "Stock search" },
         { url: image, caption: "Portfolio analysis dashboard" },
       ],
     },
@@ -37,11 +67,9 @@ const Projects = () => {
       ],
       technologies: ["React", "JavaScript", "CSS", "Axios"],
       github: "https://github.com/Jfloyd7720/FE-Project-NC-News",
-      screenshots: [
-        { url: image, caption: "Article listing page" },
-        { url: image, caption: "Comment section" },
-      ],
+      screenshots: [],
     },
+
     {
       id: 3,
       title: "News API (Backend)",
@@ -56,10 +84,7 @@ const Projects = () => {
       ],
       technologies: ["Node.js", "Express", "PostgreSQL", "Jest"],
       github: "https://github.com/Jfloyd7720/Northcoders-News-API",
-      screenshots: [
-        { url: image, caption: "API documentation" },
-        { url: image, caption: "Database schema" },
-      ],
+      screenshots: [],
     },
   ];
 
