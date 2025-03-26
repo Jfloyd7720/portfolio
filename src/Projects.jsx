@@ -29,7 +29,7 @@ const Projects = () => {
         "OpenAI API",
         "Firebase Authentication",
       ],
-      github: "#", // Add your GitHub link here
+      github: "https://github.com/aldaldaldald/habigotchi-front-end", // Add your GitHub link here
       screenshots: [
         { url: habitImage, caption: "Virtual pet interaction screen" },
         { url: habitImage2, caption: "Stats page" },
