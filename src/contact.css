@@ -6,6 +6,7 @@
   background-color: #252526;
   color: var(--dark-text);
   min-height: 100vh;
+  align-items: center;
 }
 
 .contact .section-title {
@@ -93,7 +94,7 @@
 
 .form-group input,
 .form-group textarea {
-  width: 98%;
+  width: 96.7%;
   padding: 0.8rem;
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -106,7 +107,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--dark-primary);
+  border-color: #86affc;
 }
 
 .form-group textarea {
