@@ -6,18 +6,6 @@ const Timeline = () => {
 
   const milestones = [
     {
-      year: "Jul 2018 - Jul 2021",
-      title: "Customer Service Assistant, Tesco",
-      description:
-        "Provided customer support, handled transactions, and trained new team members on service best practices.",
-      icon: "🛒",
-      highlights: [
-        "Resolved customer issues efficiently",
-        "Processed financial transactions",
-        "Trained new staff members",
-      ],
-    },
-    {
       year: "Jan - Jun 2020",
       title: "Advertising Executive Intern, BBH",
       description:

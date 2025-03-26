@@ -36,7 +36,7 @@
   scroll-snap-align: start;
 
   max-width: 50%;
-  background: #454545;
+  background: #569cd6;
   border-radius: 8px;
   padding: 1.5rem;
   border: 1px solid var(--vscode-editorWidget-border, #454545);
@@ -54,7 +54,7 @@
 
 .timeline-icon {
   font-size: 1.5rem;
-  margin-bottom: 0.75rem;
+
   color: var(--vscode-keyword, #569cd6);
 }
 
@@ -69,11 +69,11 @@
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
-  color: var(--vscode-text, #d4d4d4);
+  color: #1e1e1e;
 }
 
 .timeline-description {
-  color: var(--vscode-descriptionForeground, #a3a3a3);
+  color: #1e1e1e;
   line-height: 1.5;
   margin-bottom: 1rem;
   font-size: 0.9rem;
@@ -88,7 +88,7 @@
   position: relative;
   padding-left: 1.25rem;
   margin-bottom: 0.4rem;
-  color: var(--vscode-descriptionForeground, #a3a3a3);
+  color: #1e1e1e;
   line-height: 1.4;
   font-size: 0.85rem;
 }
