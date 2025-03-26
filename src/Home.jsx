@@ -85,7 +85,7 @@ function Home() {
       {/* Projects Section */}
       <section className="projects-section">
         <h2 className="section-title">
-          <span id="white" className="title-gradient">
+          <span id="white" className="section-title">
             FEATURED PROJECTS
           </span>
         </h2>

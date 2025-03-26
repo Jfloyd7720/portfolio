@@ -115,7 +115,9 @@ const Timeline = () => {
 
   return (
     <section className="horizontal-timeline-section">
-      <h2 className="section-title">PROFESSIONAL JOURNEY</h2>
+      <h2 id="white" className="section-title">
+        PROFESSIONAL JOURNEY
+      </h2>
 
       <div className="timeline-container">
         <div className="timeline-scroll" ref={timelineRef}>
